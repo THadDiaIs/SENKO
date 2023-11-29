@@ -1,0 +1,124 @@
+.formatt{
+  color: white;
+  caret-color: white;
+  border: 0;
+  padding: 0;
+  border-radius: 0.5rem;
+  height: 37px;
+  text-align: center;
+}
+::placeholder{
+  color: #b1afaf;
+}
+#name{
+  width: 357px;
+}
+#qty{
+  width: 117px;
+}
+#total, #unitPrice{
+  color: #2c3e50;
+  border: 3px solid #2c3e50;
+  border-radius: 5px;
+  height: 37px;
+  font-weight: bold;
+  width: 100px;
+}
+#total{
+  border: 0;
+  font-size: 1.3rem;
+}
+#buttn, #mod, #close{
+  color: #1abc9c;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 37px;
+}
+thead{
+  color: #1abc9c;
+}
+#num{
+  height: 15px;
+}
+.msgs{
+  display: none;
+  position: fixed;
+  right: 45px;
+  top: 125px;
+  font-size: 15px;
+  font-weight: normal;
+  color: #2c3e50;
+  z-index: 1000;
+}
+.msgd, .msgi{
+  display: flex;
+  text-align: center;
+  color: white;
+  padding: 17px;
+  width: 277px;
+  margin-bottom: 7px;
+  border-radius: 7px;
+}
+.msgi{
+  background-color: hsl(190deg 90% 50% / 80%);
+}
+.msgd{
+  background-color: rgb(220 53 69 / 0.80);
+}
+#dlg{
+  position: absolute;
+  display: none;
+  width: 95px;
+  border-radius: 5px;
+  background-color: hsl(168deg 76% 42% / 71%);
+  z-index: 1000;
+}
+.list-dlg{
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  padding: 0;
+}
+.list-item:hover{
+  background-color: hsl(168deg 76% 42% / 83%);
+  cursor: context-menu;
+}
+#cl-Name{
+  width: 330px;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.ovr{
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15000;
+  padding-top: 18%;
+}
+#float-box{
+  padding: 21px;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 15px 0 15px 0;
+  width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pName, #pQuanty, #pPrice, #mod{
+  margin-bottom: 7px;
+  width: 100%;
+}
+#close{
+  width: 100%;
+  color: red;
+}
+#mod{
+  color: #2c3e50;
+}
