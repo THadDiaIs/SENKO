@@ -85,7 +85,7 @@ function load() {
   });
 
   $('#buttn').click((event) => {
-    if (($('#name').val() != '') && ($('#unitPrice').val() != '') && (!($('#qty').val() === ''))) {
+    if (($('#name').val() != '') && (Number($('#unitPrice').val()) > 0) && (Number($('#qty').val()) > 0)) {
       event.preventDefault();
       let nam = '';
       if (target[0] != undefined) {
@@ -171,9 +171,7 @@ function process(brute) {
   }
   //addsugestions
   base.forEach((item, i) => {
-    // if (String(item.name).includes($('#name').val())) {
     $('#sugestions').append('<option value="' + item.name + '">');
-    // }
   });
 }
 

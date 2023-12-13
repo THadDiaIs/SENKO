@@ -8,7 +8,7 @@
   text-align: center;
 }
 ::placeholder{
-  color: #b1afaf;
+  color: #d4c4c4;
 }
 #name{
   width: 357px;
@@ -35,6 +35,7 @@
   width: 120px;
   height: 37px;
 }
+
 thead{
   color: #1abc9c;
 }

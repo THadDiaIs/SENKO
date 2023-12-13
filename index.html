@@ -45,24 +45,32 @@
   <header class="masthead bg-primary text-white text-center" id="hder">
     <div class="container d-flex align-items-center flex-column">
       <form>
-        <input list="sugestions" class="formatt bg-secondary" tabindex="1" type="search" id="name" value=""
-          placeholder="Nombre del producto" required>
-        <input class="formatt bg-secondary" tabindex="2" type="number" id="qty" value="" placeholder="Cantidad"
-          required>
-        <select class="formatt bg-secondary" tabindex="3" id="priceType" required>
-          <optgroup label="Tipo de Precio" class="formatt bg-secondary">
-            <option selected value="0">Normal</option>
-            <option value="1">Mayorista</option>
-            <option value="2">Volatil</option>
-          </optgroup>
-        </select>
-        <input class="bg-primary formatt" tabindex="4" type="number" id="unitPrice" value="" placeholder="Q. 0.0"
-          required>
-        <button class="btn btn-secondary" tabindex="6" type="submit" id="buttn"> <strong>Agregar</strong> </button>
-        <input class="bg-primary formatt" tabindex="5" type="number" id="total" value="" placeholder="Q. 0.0">
+        <div class="row mt-2 mb-2">
+          <div class="col-12">
+              <input list="sugestions" class="formatt bg-secondary" tabindex="1" type="search" id="name" value=""
+              placeholder="Nombre del producto" required>
+              <input class="formatt bg-secondary" tabindex="2" type="number" id="qty" value="" placeholder="Cantidad"
+              required>
+              <select class="formatt bg-secondary" tabindex="3" id="priceType" required>
+                <optgroup label="Tipo de Precio" class="formatt bg-secondary">
+                  <option selected value="0">Normal</option>
+                  <option value="1">Mayorista</option>
+                  <option value="2">Volatil</option>
+                </optgroup>
+              </select>
+            <datalist id="sugestions">
+            </datalist>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+            <input class="bg-primary formatt" tabindex="4" type="number" id="unitPrice" value="" placeholder="Q. 0.0"
+              required>
+            <button class="btn btn-secondary " tabindex="6" type="submit" id="buttn"> <strong>Agregar</strong> </button>
+            <input class="bg-primary formatt" tabindex="5" type="number" id="total" value="" placeholder="Q. 0.0">
+          </div>
+        </div>
       </form>
-      <datalist id="sugestions">
-      </datalist>
     </div>
   </header>
   <div class="printable-hder d-none">
